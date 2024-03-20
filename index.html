@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body onchange="changeImg()">
+  
+  <nav id="nav">
+    <div class="overlay"></div>
+    <div class="close"><img onclick="closeNav()" src="/images/icon-close-menu.svg" alt="" class="closeMenu"></div>
+    
+    <ul class="main-ul">
+      <li>Features 
+        <img  onclick="openDropOne()" src="/images/icon-arrow-down.svg" alt="#" class="arrow" id="DropOne">
+        <ul class="drop-downOne dropOne" id="DropOnes">
+          <li><img src="/images/icon-todo.svg" alt="" class="list-image">Todo list</li>
+          <li><img src="/images/icon-calendar.svg" alt="" class="list-image">Calendar</li>
+          <li><img src="/images/icon-reminders.svg" alt="" class="list-image">Reminders</li>
+          <li><img src="/images/icon-planning.svg" alt="" class="list-image">Planning</li>
+        </ul>
+      </li>
+      <li>Company 
+        <img onclick="openDropTwo()" src="/images/icon-arrow-down.svg" alt="#" class="arrow" id="DropTwoArrow">
+        <ul class="drop-downTwo DropTwo" id="DropTwo">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </li>
+      <li><a href="">Careers</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+    <div class="log-register-container">
+      <div class="login-btn">Login</div> 
+      <div class="register-btn">Register</div>
+    </div>
+  </nav>
+  
+<div class="logo-menu-bar"><img src="/images/logo.svg" alt="" class="logo">
+  <img onclick="openNav()" src="/images/icon-menu.svg" alt="" class="menu-open">
+</div>
+<div class="window-1440px">
+<header>
+  <img  src="/images/image-hero-mobile.png" alt="" class="hero-img" id="heroImage">
+
+  <img src="/images/image-hero-desktop.png" alt="" class="desktop-img">
+</header>
+<main class="main-container"> 
+  <h1> <span class="break-1440">Make</span> remote work</h1>
+  <p>Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.</p>
+
+  <div class="btn">Learn more</div>
+  <div class="trusted-by" id="trusted-by-1440px">
+    <img src="/images/client-databiz.svg" alt="" class="trust-logos">
+    <img src="/images/client-audiophile.svg" alt="" class="trust-logos">
+    <img src="/images/client-meet.svg" alt="" class="trust-logos">
+    <img src="/images/client-maker.svg" alt="" class="trust-logos">
+  </div>
+</main>
+<footer>
+  <div class="trusted-by" id="trusted-mute">
+    <img src="/images/client-databiz.svg" alt="" class="trust-logo">
+    <img src="/images/client-audiophile.svg" alt="" class="trust-logo">
+    <img src="/images/client-meet.svg" alt="" class="trust-logo">
+    <img src="/images/client-maker.svg" alt="" class="trust-logo">
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Chukwudi Hart </a>.
+  </div>
+</footer>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
